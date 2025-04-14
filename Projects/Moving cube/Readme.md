@@ -1,4 +1,15 @@
 # Moving cube
-## Creates a cube that responds to WASD
-currently in progress
-### i can see where TWHG was inspired
+*visual application*
+
+
+**Creates a cube that responds to WASD**
+
+### Notes
+**currently in progress**
+
+
+-border checks aren't consistent
+
+-diagonal movement is 1.4x faster than horizontal
+
+*i can see how TWHG was inspired*
