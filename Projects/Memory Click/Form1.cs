@@ -1,11 +1,16 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MemoryClick
+namespace Memory_Click
 {
     public partial class Form1 : Form
     {
@@ -49,9 +54,10 @@ namespace MemoryClick
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            BackgroundImage = Image.FromFile(@"J:\Stuff\code asset stuff\base memory click template.png");
-            Width = BackgroundImage.Width + (Width - ClientSize.Width);
-            Height = BackgroundImage.Height + (Height - ClientSize.Height);
+            this.BackColor = Color.FromArgb(255, 35, 35, 35);
+            Width = 600;
+            Height = 800;
+            LoadImageFromUrl("https://i.postimg.cc/XqPSNBPc/base-memory-click-template.png");
         }
         private Button CreateButton(string text)
         {
@@ -66,6 +72,20 @@ namespace MemoryClick
             Controls.Add(button);
 
             return button;
+        }
+        private async void LoadImageFromUrl(string url)
+        {
+            try
+            {
+                HttpClient httpClient = new HttpClient();
+                var data = await httpClient.GetStreamAsync(url);
+                this.BackgroundImage = Image.FromStream(data);
+                this.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            catch (Exception)
+            {
+                this.BackColor = Color.FromArgb(255, 35, 35, 35);
+            }
         }
         private void modeButtonInitialization()
         {
