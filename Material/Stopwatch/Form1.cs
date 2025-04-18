@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,8 +21,8 @@ namespace Timer_Length_Display
         {
             InitializeComponent();
 
-            Width = 1000;
-            Height = 800;
+            Width = 400;
+            Height = 130;
             BackColor = Color.FromArgb(255, 35, 35, 35);
             DoubleBuffered = true;
 
