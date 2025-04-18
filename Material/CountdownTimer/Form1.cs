@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Timer_Length_Display
+namespace CountdownTimer
 {
     public partial class Form1 : Form
     {
