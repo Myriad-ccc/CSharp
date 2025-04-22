@@ -1,0 +1,25 @@
+private readonly Timer Pulse = new Timer { Interval = 50 };
+..
+Pulse.Tick += Pulse_Tick;
+Pulse.Start();
+..
+
+private float scale = 1.0f;
+private bool grow = true;
+private void Pulse_Tick(object sender, EventArgs eventArgs)
+{
+    if (grow)
+    {
+        scale += 0.1f;
+    }
+    else
+    {
+        scale -= 0.1f;
+    }
+
+    if (scale > 1.1f || scale < 0.9f)
+    {
+        grow = !grow;
+    }
+    timeLabel.Font = new Font("Comic Sans MS", 40f * scale);
+}
