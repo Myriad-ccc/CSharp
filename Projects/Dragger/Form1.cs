@@ -227,7 +227,7 @@ namespace Dragging
             };
         }
 
-        private Wall RandomWallSpawn(Color? WallColor = null)
+        private Wall RandomWallSpawn()
         {
             Rectangle spawnBounds = new Rectangle(new Point(7, 7), new Size(914, 628)); // 928, 642
 
