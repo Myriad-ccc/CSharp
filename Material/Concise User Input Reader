@@ -1,0 +1,13 @@
+//#1
+int? pairs = null;
+while (pairs == null)
+{
+    string n = Console.ReadLine();
+    if (!int.TryParse(n, out int x)) continue;
+    pairs = x > 0 ? x : (int?)null;
+}
+
+//#2
+int pairs = 0;
+while (!int.TryParse(Console.ReadLine(), out int x) && x < 0)
+    pairs = x;
