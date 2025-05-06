@@ -9,5 +9,5 @@ while (pairs == null)
 
 //#2
 int pairs = 0;
-while (!int.TryParse(Console.ReadLine(), out int x) && x < 0)
+while (!(int.TryParse(Console.ReadLine(), out int x) && x > 0))
     pairs = x;
