@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\ShapeShift\ShapeShift\bin\Debug\ShapeShift.exe.config
+C:\Users\User\source\repos\ShapeShift\ShapeShift\bin\Debug\ShapeShift.exe
+C:\Users\User\source\repos\ShapeShift\ShapeShift\bin\Debug\ShapeShift.pdb
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.Form1.resources
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.Properties.Resources.resources
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.csproj.GenerateResource.cache
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.exe
+C:\Users\User\source\repos\ShapeShift\ShapeShift\obj\Debug\ShapeShift.pdb
